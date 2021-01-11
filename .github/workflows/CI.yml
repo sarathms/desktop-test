@@ -12,3 +12,6 @@ jobs:
       - name: Run script
         run: bash ./index.sh
         shell: bash
+        env:
+          API_MOCKING: enabled
+
