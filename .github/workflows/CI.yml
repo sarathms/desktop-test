@@ -1,0 +1,13 @@
+name: Testing ENV vars
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test-env:
+    name: Testing ENV vars
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: bash ./index.sh
+        shell: bash
