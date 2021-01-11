@@ -1,7 +1,5 @@
 name: Testing ENV vars
-on:
-  push:
-    branches: [ master ]
+on: push
 
 jobs:
   test-env:
