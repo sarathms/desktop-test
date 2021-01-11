@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Running the script"
-env
+node -e "console.log(process.env)"
