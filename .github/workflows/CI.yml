@@ -16,5 +16,5 @@ jobs:
           wait-on: 'http://localhost:3100'
           browser: chrome
         env:
-          API_MOCKING: true
+          API_MOCKING: enabled
 
