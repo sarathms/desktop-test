@@ -2,16 +2,19 @@ name: Testing ENV vars
 on: push
 
 jobs:
-  test-env:
-    name: Testing ENV vars
+  cypress-e2e:
+    name: E2E Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run script
-        run: bash ./index.sh
-        shell: bash
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: yarn start
+          wait-on: 'http://localhost:3100'
+          browser: chrome
         env:
-          API_MOCKING: enabled
+          API_MOCKING: true
 
