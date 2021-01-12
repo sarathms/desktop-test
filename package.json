@@ -6,9 +6,11 @@
   "author": "Sarath M S <sarath.ms@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cypress": "^6.2.1",
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "yarn run cypress run"
   }
 }

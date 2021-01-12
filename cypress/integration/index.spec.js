@@ -5,6 +5,6 @@ describe('Home Page Tests', () => {
   })
 
   it('shows home page', () => {
-    cy.percySnapshot()
+    cy.contains('Hello World!')
   })
 })
